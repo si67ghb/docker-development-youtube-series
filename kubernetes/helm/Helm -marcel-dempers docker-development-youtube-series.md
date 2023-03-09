@@ -17,6 +17,7 @@ git clone git@github.com:si67ghb/docker-development-youtube-series.git
 cd docker-development-youtube-series/kubernetes/helm/
 
 ## Create Chart
+
 https://github.com/si67ghb/docker-development-youtube-series/tree/master/kubernetes/helm#create-our-first-chart
 mkdir temp && cd temp
 helm create example-app
@@ -28,6 +29,7 @@ https://helm.sh/docs/topics/charts/#the-chart-file-structure
 
 
 ## CleanUp template 
+
  Delete Unwanted files
 controlplane $ ls -l example-app/templates/
 total 32
@@ -74,6 +76,7 @@ total 24
 ```
 ## 
 Rendering template
+
 https://github.com/si67ghb/docker-development-youtube-series/tree/master/kubernetes/helm#test-the-rendering-of-our-template
 ```
 controlplane $ helm template --help
