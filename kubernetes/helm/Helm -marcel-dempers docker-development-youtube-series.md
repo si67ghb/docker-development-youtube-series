@@ -31,6 +31,7 @@ https://helm.sh/docs/topics/charts/#the-chart-file-structure
 
 ## CleanUp template 
 
+```
  Delete Unwanted files
 controlplane $ ls -l example-app/templates/
 total 32
@@ -42,15 +43,17 @@ total 32
 -rw-r--r-- 1 root root  373 Mar  8 11:08 service.yaml				<----- delete
 -rw-r--r-- 1 root root  328 Mar  8 11:08 serviceaccount.yaml		<----- delete
 drwxr-xr-x 2 root root 4096 Mar  8 11:08 tests						<----- delete
-
+```
 TPL='./example-app/templates/'
 ls -l ${TPL}
 rm -rf ${TPL}*.yaml ${TPL}tests
 
+```
 controlplane $ ls -l ${TPL}
 total 8
 -rw-r--r-- 1 root root 1763 Mar  9 08:08 NOTES.txt
 -rw-r--r-- 1 root root 1822 Mar  9 08:08 _helpers.tpl
+```
 
 ## Add Kubernetes files to our new Chart
 
