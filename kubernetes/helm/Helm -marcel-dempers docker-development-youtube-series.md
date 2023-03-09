@@ -19,6 +19,7 @@ cd docker-development-youtube-series/kubernetes/helm/
 ## Create Chart
 
 https://github.com/si67ghb/docker-development-youtube-series/tree/master/kubernetes/helm#create-our-first-chart
+
 mkdir temp && cd temp
 helm create example-app
 
