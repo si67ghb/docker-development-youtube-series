@@ -117,6 +117,7 @@ example-app     default         1               2023-03-09 08:15:59.587923525 +0
 ```
 
 ## Value injections for our Chart
+
 https://github.com/si67ghb/docker-development-youtube-series/tree/master/kubernetes/helm#value-injections-for-our-chart
 
 vi example-app/values.yaml  
@@ -130,6 +131,7 @@ deployment:
 *** deployment.yaml ***
 
 vi ${TPL}deployment.yaml
+
 image: {{ .Values.deployment.image }}:{{ .Values.deployment.tag }}
 
 ### upgrade our release
